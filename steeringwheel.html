@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<!--
+  Massively by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Steering Wheel Project - Mitchell Chan</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+      <!-- Intro / Hero -->
+      <div id="intro">
+        <h1>Baja Vehicle Steering Wheel</h1>
+        <p>Baja SAE 2025 — Design & Simulation<br />
+        Queen's University</p>
+        <ul class="actions">
+          <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Read More</a></li>
+        </ul>
+      </div>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="projects.html">My Projects</a></li>
+          <li class="active"><a href="steeringwheel.html">Steering Wheel</a></li>
+          <!-- Optional: keep others or remove -->
+          <!-- <li><a href="generic.html">Generic Page</a></li>
+          <li><a href="elements.html">Elements Reference</a></li> -->
+        </ul>
+        <ul class="icons">
+          <!-- Replace # with real links if you have them -->
+          <!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+          <!-- <li><a href="https://github.com/ryouol" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+          <li><a href="https://www.linkedin.com/in/mitchell-chan-896796306/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+
+        <!-- Featured / Overview -->
+        <article class="post featured">
+          <header class="major">
+            <span class="date">September 2025</span>
+            <h2>Project Overview</h2>
+            <p>
+              Redesign of the Baja SAE steering wheel focused on ergonomics, manufacturability,
+              and durability. Targets: reduce mass, improve driver comfort and hand placement,
+              and maintain a robust safety factor under worst-case event loads.
+            </p>
+          </header>
+          <!-- Replace the image below with your hero image -->
+          <a href="#" class="image main"><img src="images/steeringwheel_hero.jpg" alt="Steering Wheel CAD Hero" /></a>
+          <ul class="actions special">
+            <!-- <li><a href="index.html" class="button">← Back to Portfolio</a></li> -->
+          </ul>
+        </article>
+
+        <!-- Project Details -->
+        <section class="post">
+          <header>
+            <h3>Project Goals</h3>
+          </header>
+          <p>
+            • Improve driver ergonomics and visibility of key controls<br />
+            • Reduce mass while preserving stiffness and strength<br />
+            • Ensure compatibility with existing steering column & quick-release<br />
+            • Design for waterjet/CNC routing and simple post-processing
+          </p>
+        </section>
+
+        <section class="post">
+          <header>
+            <h3>Context & Constraints</h3>
+          </header>
+          <p>
+            The steering wheel interfaces with our 2025 steering column and quick-release hub. It must
+            withstand operational loads (cornering, bumps) and extreme scenarios (sudden impacts), while
+            remaining comfortable for drivers with different hand sizes and gloves.
+          </p>
+          <ul>
+            <li>Competition: Baja SAE (2025 ruleset)</li>
+            <li>Material candidates: 6061-T6 aluminum, carbon sandwich, 3D-printed nylon w/ CF</li>
+            <li>Manufacturing: waterjet/CNC, chamfers/radiusing for grip comfort</li>
+          </ul>
+        </section>
+
+        <section class="post">
+          <header>
+            <h3>Design Process</h3>
+          </header>
+          <p>
+            Started with sketches and ergonomic mockups to decide on outer profile and thumb placements.
+            Iterated in CAD (SolidWorks) with parametric dimensions for rapid changes. Fasteners and
+            hub pattern modeled to ensure clearances. Fillets applied to reduce stress concentrations.
+          </p>
+          <!-- Optional inline image -->
+          <span class="image fit"><img src="images/steeringwheel_cad_overview.jpg" alt="CAD Overview" /></span>
+        </section>
+
+        <section class="post">
+          <header>
+            <h3>FEA Setup & Results</h3>
+          </header>
+          <p>
+            Boundary conditions: hub bolt circle constrained; applied hand torque and vertical pull to
+            simulate harsh maneuvering and impact. Mesh refined around spoke fillets and hub interface.
+          </p>
+          <ul>
+            <li>Max von Mises stress: &lt; 40% of 6061-T6 yield (safety factor &gt; 2.5)</li>
+            <li>Predominant stress risers at spoke–hub fillets → increased radius + local thickening</li>
+            <li>Deflection at rim under 100&nbsp;N pull: &lt; 1.5&nbsp;mm</li>
+          </ul>
+          <!-- Replace with your plots/screens -->
+          <div class="row">
+            <div class="col-6 col-12-small">
+              <span class="image fit"><img src="images/steeringwheel_fea_stress.jpg" alt="FEA Stress" /></span>
+            </div>
+            <div class="col-6 col-12-small">
+              <span class="image fit"><img src="images/steeringwheel_fea_deflection.jpg" alt="FEA Deflection" /></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="post">
+          <header>
+            <h3>Ergonomics & Controls</h3>
+          </header>
+          <p>
+            Rim diameter and grip thickness tuned from driver feedback. Thumb rests positioned to minimize
+            wrist strain. Optional switch plate for kill-switch and display buttons with guarded cutouts
+            to prevent accidental activation.
+          </p>
+          <span class="image fit"><img src="images/steeringwheel_controls.jpg" alt="Controls Layout" /></span>
+        </section>
+
+        <section class="post">
+          <header>
+            <h3>Specs</h3>
+          </header>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th>Parameter</th><th>Value</th><th>Notes</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Outer Width × Height</td><td>280 × 180 mm</td><td>Fits cockpit & visibility</td></tr>
+                <tr><td>Rim Thickness</td><td>24 mm</td><td>Comfort with gloves</td></tr>
+                <tr><td>Mass (target)</td><td>&lt; 420 g</td><td>6061-T6 plate, pocketed</td></tr>
+                <tr><td>Hub Pattern</td><td>6 × 70 mm</td><td>Quick-release compatible</td></tr>
+                <tr><td>Finish</td><td>Deburr + anodize</td><td>Grip tape optional</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="post">
+          <header>
+            <h3>Manufacturing Plan</h3>
+          </header>
+          <ol>
+            <li>Waterjet/CNC route 6061-T6 plate (6–8&nbsp;mm)</li>
+            <li>Deburr, tumble, and hand-finish grip edges</li>
+            <li>Optional pocketing on rear face for mass reduction</li>
+            <li>Anodize; apply grip tape at thumb rests</li>
+            <li>Assembly with hub and switch plate</li>
+          </ol>
+        </section>
+
+        <section class="post">
+          <header>
+            <h3>Outcomes & Next Steps</h3>
+          </header>
+          <p>
+            Prototype met stiffness and comfort targets in bench tests. Next: on-vehicle testing, fatigue
+            assessment, and exploring a carbon-sandwich variant with 3D-printed core for further weight
+            savings without compromising stiffness.
+          </p>
+        </section>
+
+        <!-- Optional Gallery / More Images -->
+        <section class="posts">
+          <article>
+            <header><h3>Rough Ergonomic Mockups</h3></header>
+            <a href="#" class="image fit"><img src="images/steeringwheel_mockups.jpg" alt="Ergo Mockups" /></a>
+            <p>Foam/ply templates to validate hand positions and thumb rest locations.</p>
+          </article>
+          <article>
+            <header><h3>Hub Interface Detail</h3></header>
+            <a href="#" class="image fit"><img src="images/steeringwheel_hub.jpg" alt="Hub Interface" /></a>
+            <p>Fillets and local thickening reduce stress concentrations at the spoke–hub junction.</p>
+          </article>
+        </section>
+
+        <ul class="actions special">
+          <li><a href="projects.html" class="button">← Back to Projects</a></li>
+        </ul>
+
+      </div><!-- /#main -->
+
+      <!-- Footer -->
+      <footer id="footer">
+        <!-- Optional contact form; keep or remove -->
+        <!-- <section>
+          <form method="post" action="#">
+            <div class="fields">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="3"></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li><input type="submit" value="Send Message" /></li>
+            </ul>
+          </form>
+        </section> -->
+
+        <section class="split contact">
+          <section>
+            <h3>Email</h3>
+            <p><a href="#">your.email@example.com</a></p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li><a href="https://www.linkedin.com/in/mitchell-chan-896796306/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+              <!-- <li><a href="https://github.com/ryouol" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+            </ul>
+          </section>
+        </section>
+      </footer>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul><li>&copy; Mitchell Chan</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+      </div>
+
+    </div><!-- /#wrapper -->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

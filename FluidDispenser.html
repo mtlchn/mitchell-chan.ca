@@ -1,0 +1,402 @@
+<!DOCTYPE HTML>
+<!--
+  Massively by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Automatic Fluid and Powder Dispenser - Mitchell Chan</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+      <!-- Intro / Hero -->
+      <div id="intro">
+        <h1>Automatic Fluid and Powder Dispenser</h1>
+        <p>Team Project<br />
+        Queen's University</p>
+        <ul class="actions">
+          <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Read More</a></li>
+        </ul>
+      </div>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="projects.html">My Projects</a></li>
+          <li class="active"><a href="FluidDispenser.html">Automatic Fluid and Powder Dispenser</a></li>
+          <!-- Optional: keep others or remove -->
+          <!-- <li><a href="generic.html">Generic Page</a></li>
+          <li><a href="elements.html">Elements Reference</a></li> -->
+        </ul>
+        <ul class="icons">
+          <!-- Replace # with real links if you have them -->
+          <!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+          <!-- <li><a href="https://github.com/ryouol" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+          <li><a href="https://www.linkedin.com/in/mitchell-chan-896796306/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+
+        <!-- Featured / Overview -->
+        <article class="post featured">
+          <header class="major">
+            <span class="date">September 2023</span>
+            <h2>Project Overview</h2>
+            <p>
+              The Automatic Fluid and Powder Dispenser was designed to streamline the preparation of naloxone hydrochloride solutions 
+              for emergency overdose treatment. Traditional manual mixing is time-consuming, inconsistent, 
+              and poses health risks through direct handling. This project aimed to create a compact device that could automatically measure, 
+              dispense, and mix powder with water inside test tubes in under two minutes. The system combined a rotating turntable, a peristaltic 
+              water pump, a servo-controlled powder funnel, and an Arduino microcontroller for precise timing and operation. For safety during 
+              prototype testing, the active pharmaceutical ingredient was substituted with Kool-Aid powder and water, allowing the team to safely 
+              validate the device’s functionality and reliability. By simplifying the process into an automated sequence, the dispenser 
+              demonstrated how low-cost engineering solutions can improve safety, reliability, and efficiency in pharmaceutical preparation.
+            </p>
+          </header>
+          <!-- Replace the image below with your hero image -->
+           <div style="text-align:center;">
+            <img src="images/DisProtHD.png" alt="CAD Overview1" style="width:400px; height:auto;" />
+            <p style="font-size:0.9em; color:#666;"></p>
+            </div>
+
+          <ul class="actions special">
+            <!-- <li><a href="index.html" class="button">← Back to Portfolio</a></li> -->
+          </ul>
+        </article>
+
+        <!-- Project Details -->
+        <section class="post">
+          <header>
+            <h3>Project Goals</h3>
+          </header>
+          <p>
+            • Develop a device capable of automatically preparing naloxone hydrochloride solutions to assist in overdose treatment.<br />
+            • Design a system that can dispense both powder and water into test tubes within 120 seconds.<br />
+            • Ensure the dispenser remains within specified dimension limits of 25 cm × 25 cm × 30 cm for portability and ease of integration.<br />
+            • Incorporate four integrated subsystems:<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; → A rotating turntable to align and position test tubes.<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; → A peristaltic water pump to deliver precise volumes of fluid.<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; → A servo-controlled powder funnel to release accurate doses of powder.<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; → An Arduino-based control unit to automate timing and sequencing.<br />
+            • Ensure the design is compact, portable, and user-friendly, requiring only the push of a button to operate.<br />
+            • Build in safety features, including an emergency stop mechanism, to minimize risks during operation.<br />
+            • Utilize sustainable and low-cost materials (recycled cardboard, acrylic, simple electronics) for prototyping.<br />
+            • Test the prototype safely by substituting naloxone powder with Kool-Aid powder and water to demonstrate functionality.<br />
+            </p>
+
+
+        </section>
+
+        <!-- <section class="post">
+          <header>
+            <h3>Context & Constraints</h3>
+          </header>
+          <p>
+            The steering wheel interfaces with our 2025 steering column and quick-release hub. It must
+            withstand operational loads (cornering, bumps) and extreme scenarios (sudden impacts), while
+            remaining comfortable for drivers with different hand sizes and gloves.
+          </p>
+          <ul>
+            <li>Competition: Baja SAE (2025 ruleset)</li>
+            <li>Material candidates: 6061-T6 aluminum, carbon sandwich, 3D-printed nylon w/ CF</li>
+            <li>Manufacturing: waterjet/CNC, chamfers/radiusing for grip comfort</li>
+          </ul>
+        </section> -->
+
+        <section class="post">
+          <header>
+            <h3>Design Process</h3>
+          </header>
+          <p>
+            The design process began with brainstorming and initial concept sketches to identify possible ways of combining powder and 
+            liquid automatically. Early ideas included immersion-based mixing, screw-driven funnels, and rotating hoppers. After 
+            evaluating complexity, stability, and manufacturability, the team selected a turntable-based system that would align test 
+            tubes under separate dispensing units. This allowed powder and water to be delivered sequentially with fewer moving parts.<br /><br />
+            
+            <div class="row">
+                <div class="col-6 col-12-small">
+                <span class="image fit"><img src="images/DisDraft1.png" alt="FEA Stress" /></span>
+                </div>
+                <div class="col-6 col-12-small">
+                <span class="image fit"><img src="images/DisDraft2.png" alt="FEA Deflection" /></span>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-6 col-12-small">
+                <span class="image fit"><img src="images/DisDraft3.png" alt="FEA Stress" /></span>
+                </div>
+                <div class="col-6 col-12-small">
+                <span class="image fit"><img src="images/DisDraft4.png" alt="FEA Deflection" /></span>
+                </div>
+            </div>
+
+            From there, dispenser parts were created to size the system within the required 25 cm × 25 cm × 30 cm dimension limits. 
+            Cardboard and foamboard models were used to test tube alignment, subsystem layout, and stability. These mockups revealed that 
+            immersion-style mixing was not reliable at small scale, leading to the simpler funnel-based powder dispensing approach.<br /><br />
+
+            The next stage focused on CAD modeling in SolidWorks. Each subsystem was designed parametrically to allow quick changes in dimensions. 
+            The turntable was modeled with a central shaft and evenly spaced slots for test tubes. The powder dispenser used a servo-controlled 
+            trap door funnel that released a fixed amount of powder per actuation. A peristaltic pump was modeled for water delivery to ensure 
+            consistent volumes while avoiding contamination. All subsystems were integrated into a single frame to ensure proper clearances and 
+            manufacturability.<br /><br />
+
+             <div style="text-align:center;">
+            <img src="images/FinalAssembly.png" alt="CAD Overview1" style="width:400px; height:auto;" />
+            <p style="font-size:0.9em; color:#666;"></p>
+            </div>
+
+            Once the CAD model was complete, the design was refined through iteration and simplification. The shaft connection for the 
+            turntable was improved to reduce wobble, and the powder funnel was streamlined to prevent clumping. Fillets and reinforcements 
+            were added at high-stress regions to reduce material failure risk. The overall frame was reduced to a compact rectangular base to 
+            stay within size constraints and improve portability.<br /><br />
+
+            Finally, the design was implemented through rapid prototyping and electronics integration. 
+            Laser-cut acrylic and recycled cardboard were used for the frame. An Arduino Uno was programmed to control 
+            the motorized turntable, servo motor, and water pump in sequence, with an emergency stop button included for safety. 
+            For testing, Kool-Aid powder and water were substituted in place of naloxone to validate system performance without handling 
+            pharmaceuticals.<br />
+
+          </p>
+          <!-- Optional inline image -->
+          <!-- <span class="image fit"><img src="images/steeringwheel_cad_overview.jpg" alt="CAD Overview" /></span> -->
+        </section>
+
+        <!-- <section class="post">
+          <header><h3>Arduino Control Code</h3></header>
+
+        <p>
+            The team collaboratively developed the Arduino control logic that powers the automated dispensing cycle. 
+            This code coordinates the pump, servo-controlled trapdoor, and turntable systems — ensuring precise 
+            sequencing, accurate dosing, and safe operation. It was a joint effort to translate the mechanical design 
+            into reliable software, allowing the final prototype to run autonomously with a single button press.
+          </p>
+
+          <pre><code>
+        // Initialize motors and sensors
+        #include <AFMotor.h>
+        #include <Servo.h>
+
+        Servo servo;
+        AF_DCMotor pump(4);
+
+        void setup() {
+          servo.attach(9);
+          pump.setSpeed(255);
+        }
+
+        void loop() {
+          // Pump water for 20 seconds
+          pump.run(FORWARD);
+          delay(20000);
+          pump.run(RELEASE);
+        }
+          </code></pre>
+        </section> -->
+
+
+        <section class="post">
+          <header><h3>Iteration and Design Challenges</h3></header>
+          <p>
+            One of the most significant challenges encountered during the assembly of the final prototype occurred in the 
+            gearbox subsystem. During the physical build, the team discovered that the spacing between the axle holes 
+            had been miscalculated in the original CAD design. As a result, the holes were placed too far apart, 
+            preventing the gear teeth from meshing correctly. This created a major mechanical failure — the gears were 
+            unable to transfer motion, leaving the entire drivetrain disconnected and the turntable inoperative.
+          </p>
+
+          <p>
+            Due to time constraints and limited access to fabrication resources, reprinting the gearbox casing was not a 
+            feasible option. The enclosure was made of acrylic polymer, which provided an opportunity to apply material 
+            science principles to solve the issue. Knowing that heat softens the internal bonds of polymers, the team 
+            used a lighter to carefully heat the acrylic around the misaligned hole locations. Once the material reached 
+            a pliable state, a drill was used to accurately reposition the holes at the correct spacing. This solution 
+            required careful measurement and steady execution to avoid cracking or warping the enclosure.
+          </p>
+
+          <p>
+            After the new holes were created and the gearbox was reassembled, the gear teeth engaged properly, restoring 
+            full functionality to the drivetrain. The turntable began rotating as intended, and the DC motor’s power was 
+            successfully transmitted through the gear system. This experience highlighted the importance of precision 
+            in mechanical design and demonstrated the team’s ability to adapt and apply theoretical knowledge to 
+            overcome real-world engineering challenges under tight constraints.
+          </p>
+        </section>
+
+
+        <section class="post">
+          <!-- <header>
+            <h3>Final Process and Technical Specifications</h3>
+          </header> -->
+          <p>
+            <section class="post">
+          <header>
+            <h3>Final Prototype and Technical Specifications</h3>
+          </header>
+
+          <p>
+            The final prototype of the Automated Fluid and Powder Dispenser is a compact, autonomous system that prepares aqueous naloxone solutions at the push of a button. It integrates four coordinated subsystems — rotation, powder dispensing, liquid delivery, and electronic control — into a single, sealed unit designed for safety, precision, and ease of use. Each subsystem was optimized through iterative design to reduce mechanical complexity, improve reliability, and meet the 120-second dosage requirement.
+          </p>
+
+          <h4>Operation Process</h4>
+          <p>
+            When activated, the Arduino UNO initializes the dispensing cycle. The infrared sensor confirms test tube alignment before the turntable rotates into position. A servo motor then opens a funnel door approximately 80°, allowing a controlled dose of powder to fall into the tube. Immediately afterward, a DC-powered water pump delivers a measured volume of water from a sealed reservoir. Once the solution is prepared, the turntable indexes to the next tube and repeats the sequence. A double press of the start button triggers an emergency stop, halting all operations.
+          </p>
+
+          <h4>Subsystem Specifications</h4>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Subsystem</th>
+                  <th>Technical Specifications</th>
+                  <th>Performance Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Turntable & Gearbox</td>
+                  <td>35 RPM DC motor with 1:200 gear reduction; 0.5 cm central shaft</td>
+                  <td>Rotates 1/5 turn per cycle with high torque for stable indexing</td>
+                </tr>
+                <tr>
+                  <td>Powder Dispenser</td>
+                  <td>Servo-actuated 3D-printed funnel door (80° rotation), ~0.3 g/s flow</td>
+                  <td>Smooth funnel interior prevents clumping; thin door reduces spray</td>
+                </tr>
+                <tr>
+                  <td>Liquid Delivery</td>
+                  <td>DC micro pump (~60 mL/min); ~20 mL delivered in 20 s per cycle</td>
+                  <td>Measured 200 mL in ~200 s; flow rate drops slightly after 2+ hours of use</td>
+                </tr>
+                <tr>
+                  <td>Electronics & Control</td>
+                  <td>Arduino UNO with IR sensor, pushbutton control, and emergency stop</td>
+                  <td>Simple, programmable sequence; E-stop immediately cuts power</td>
+                </tr>
+                <tr>
+                  <td>Frame & Materials</td>
+                  <td>PMMA acrylic structure, recycled cardboard prototype, sealed reservoir</td>
+                  <td>Corrosion-resistant and easily sanitized; sealed design prevents API exposure</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+  <h4>Performance Metrics</h4>
+  <ul>
+    <li>Cycle Time: ≤ 120 seconds per tube</li>
+    <li>Dispense Accuracy: ±5% volume tolerance in liquid delivery</li>
+    <li>Powder Consistency: ±0.1 g per dispense cycle</li>
+    <li>Safety Features: Sealed system, corrosion-resistant materials, double-press emergency stop</li>
+  </ul>
+
+  <p>
+    Overall, the final prototype demonstrated the ability to accurately and autonomously prepare multiple doses with minimal human intervention. Its modular design, compact footprint, and emphasis on safety and accessibility make it adaptable for pharmaceutical, clinical, and emergency response applications. Future iterations will focus on improving pump durability, adding a screw-cap sealed reservoir, and replacing temporary materials with stainless steel for long-term deployment.
+  </p>
+</section>
+
+          </p>
+          <!-- <ul>
+            <li>Max von Mises stress: &lt; 40% of 6061-T6 yield (safety factor &gt; 2.5)</li>
+            <li>Predominant stress risers at spoke–hub fillets → increased radius + local thickening</li>
+            <li>Deflection at rim under 100&nbsp;N pull: &lt; 1.5&nbsp;mm</li>
+          </ul> -->
+          <!-- Replace with your plots/screens -->
+          <!-- <div class="row">
+            <div class="col-6 col-12-small">
+              <span class="image fit"><img src="images/steeringwheel_fea_stress.jpg" alt="FEA Stress" /></span>
+            </div>
+            <div class="col-6 col-12-small">
+              <span class="image fit"><img src="images/steeringwheel_fea_deflection.jpg" alt="FEA Deflection" /></span>
+            </div>
+          </div> -->
+        </section>
+
+        <!-- <section class="post">
+          <header>
+            <h3>Ergonomics & Controls</h3>
+          </header>
+          <p>
+            Rim diameter and grip thickness tuned from driver feedback. Thumb rests positioned to minimize
+            wrist strain. Optional switch plate for kill-switch and display buttons with guarded cutouts
+            to prevent accidental activation.
+          </p>
+          <span class="image fit"><img src="images/steeringwheel_controls.jpg" alt="Controls Layout" /></span>
+        </section> -->
+
+
+        <!-- Optional Gallery / More Images -->
+        <ul class="actions special">
+          <li><a href="projects.html" class="button">← Back to Projects</a></li>
+        </ul>
+
+      </div><!-- /#main -->
+
+      <!-- Footer -->
+      <footer id="footer">
+        <!-- Optional contact form; keep or remove -->
+        <!-- <section>
+          <form method="post" action="#">
+            <div class="fields">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="3"></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li><input type="submit" value="Send Message" /></li>
+            </ul>
+          </form>
+        </section> -->
+
+        <section class="split contact">
+          <section>
+            <h3>Email</h3>
+            <p><a>22ctny@queensu.ca</a></p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li><a href="https://www.linkedin.com/in/mitchell-chan-896796306/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+              <!-- <li><a href="https://github.com/ryouol" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+            </ul>
+          </section>
+        </section>
+      </footer>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul><li>&copy; Mitchell Chan</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+      </div>
+
+    </div><!-- /#wrapper -->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<!--
+  Massively by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Brake Pedal Prototype - Mitchell Chan</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+      <!-- Intro / Hero -->
+      <div id="intro">
+        <h1>Baja SAE Brake Pedal Prototype</h1>
+        <p>Baja SAE 2024 — Design & Simulation<br />
+        Queen's University</p>
+        <ul class="actions">
+          <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Read More</a></li>
+        </ul>
+      </div>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="projects.html">My Projects</a></li>
+          <li class="active"><a href="brake.html">Brake Pedal</a></li>
+          <!-- Optional: keep others or remove -->
+          <!-- <li><a href="generic.html">Generic Page</a></li>
+          <li><a href="elements.html">Elements Reference</a></li> -->
+        </ul>
+        <ul class="icons">
+          <!-- Replace # with real links if you have them -->
+          <!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+          <!-- <li><a href="https://github.com/ryouol" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+          <li><a href="https://www.linkedin.com/in/mitchell-chan-896796306/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+
+        <!-- Featured / Overview -->
+        <article class="post featured">
+          <header class="major">
+            <span class="date">January 2024</span>
+            <h2>Project Overview</h2>
+            <p>
+              This project focused on designing and prototyping a lightweight yet durable brake pedal 
+              for the Queen’s Baja SAE off-road vehicle. The pedal needed to withstand 2000 N of 
+              force, integrate with the hydraulic master cylinder, and securely mount to the frame. 
+              Using SolidWorks and FEA, we optimized the geometry by introducing 
+              triangular and circular cutouts that reduced mass by nearly 20% while maintaining 
+              strength and safety. The final design uses 1045 high-carbon steel for its excellent 
+              stiffness and endurance, with a 6:1 pedal ratio for improved braking efficiency. A 
+              cost-effective prototype was 3D printed and mounted for testing, meeting both 
+              performance and budget constraints.
+            </p>
+          </header>
+          <!-- Replace the image below with your hero image -->
+          <a class="image main"><img src="images/Brake.png" alt="Steering Wheel CAD Hero" /></a>
+          <ul class="actions special">
+            <!-- <li><a href="index.html" class="button">← Back to Portfolio</a></li> -->
+          </ul>
+        </article>
+
+        <!-- Project Details -->
+        <section class="post">
+          <header>
+            <h3>Project Goals</h3>
+          </header>
+          <p>
+            • Design a brake pedal capable of withstanding at least 2000 N of applied force.<br />
+            • Ensure compatibility with the hydraulic master cylinder and mounting frame.<br />
+            • Optimize the geometry to reduce mass while maintaining stiffness and strength.<br />
+            • Select a material that balances durability, manufacturability, and cost.<br />
+            • Incorporate ergonomic considerations for driver comfort and control.<br />
+            • Prototype and validate the design through simulation (FEA) and physical testing.<br />
+            • Stay within budget constraints while meeting SAE competition requirements.<br />
+          </p>
+        </section>
+
+        <!-- <section class="post">
+          <header>
+            <h3>Context & Constraints</h3>
+          </header>
+          <p>
+            The steering wheel interfaces with our 2025 steering column and quick-release hub. It must
+            withstand operational loads (cornering, bumps) and extreme scenarios (sudden impacts), while
+            remaining comfortable for drivers with different hand sizes and gloves.
+          </p>
+          <ul>
+            <li>Competition: Baja SAE (2025 ruleset)</li>
+            <li>Material candidates: 6061-T6 aluminum, carbon sandwich, 3D-printed nylon w/ CF</li>
+            <li>Manufacturing: waterjet/CNC, chamfers/radiusing for grip comfort</li>
+          </ul>
+        </section> -->
+
+        <section class="post">
+          <header>
+            <h3>Design Process</h3>
+          </header>
+          <p>
+           We began with hand sketches and ergonomic mockups to define the pedal profile and driver foot placement. 
+           Multiple design concepts were developed and compared for manufacturability, weight reduction, and strength. 
+           The most promising candidates were then modeled in SolidWorks with parametric dimensions, 
+           allowing rapid adjustments to pedal length, thickness, and cutout geometry. 
+           Mounting holes and fastener positions were carefully placed to align with the hydraulic master cylinder and chassis frame, 
+           ensuring proper clearances. Fillets were added throughout the pedal body to reduce stress concentrations and improve fatigue 
+           resistance under repeated braking loads.
+          </p>
+          <!-- Optional inline image -->
+          <span class="image fit"><img src="images/Brake1.png" alt="CAD Overview" /></span>
+          <span class="image fit"><img src="images/Brake2.png" alt="CAD Overview1" /></span>
+        </section>
+
+        <section class="post">
+          <header>
+            <h3>Design Validation & Prototyping</h3>
+          </header>
+          <p>
+            To ensure the brake pedal design met all performance and competition requirements, we conducted both finite element analysis (FEA) and physical prototyping. FEA was performed in SolidWorks to validate the pedal under extreme loading conditions, constraining the hinge point where the pushrod connects to the master cylinder and applying a 2000&nbsp;N braking force at the pedal face. The results confirmed that the 1045 high-carbon steel pedal could withstand the load with a factor of safety between 3–4, while maintaining minimal deflection for reliable stiffness. A topology optimization study further reduced mass by 20% — from ~0.55&nbsp;kg to ~0.44&nbsp;kg — without compromising strength or performance.
+          </p>
+          <p>
+            To translate the digital design into a tangible component, the final model was 3D printed using PLA filament. This low-cost prototype enabled us to verify geometry, ergonomics, and fitment with chassis mounting points, as well as visualize the master cylinder connection. After assembling and presenting the prototype, along with our design process and FEA validation, to the Baja SAE team captains and course professors, we received confirmation that the design met all functional criteria, was manufacturable within team resources, and offered a cost-effective solution ready for full-scale production.
+          </p>
+          <div style="text-align:center;">
+            <img src="images/3Dprint.png" alt="3D printed brake pedal prototype" style="width:400px; height:auto;" />
+            <p style="font-size:0.9em; color:#666;"></p>
+          </div>
+        </section>
+
+
+        <section class="post">
+          <header>
+            <h3>Material Selection</h3>
+          </header>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th>Component</th><th>Material</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Brake pedal shaft </td><td>1045 high carbon steel</td></tr>
+                <tr><td>Brake pedal attachment mechanism</td><td>1045 high carbon steel</td></tr>
+                <tr><td>Brake pedal grip</td><td>Rubber</td></tr>
+                <tr><td>Master cylinder connection rod</td><td>1045 high carbon steel</td></tr>
+                <!-- <tr><td>Finish</td><td>Deburr + anodize</td><td>Grip tape optional</td></tr> -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="post">
+          <header>
+            <h3>Outcomes</h3>
+          </header>
+          <p>
+            <p>
+              The final brake pedal design demonstrated strong performance across all key metrics and met Baja SAE competition standards. Iterative development and validation ensured the component could safely withstand a 2000&nbsp;N braking force with a factor of safety of 3–4, while strategic material selection and topology-driven cutouts reduced weight by 20% without sacrificing strength or stiffness. A functional 3D-printed prototype confirmed proper fit, ergonomics, and integration with the chassis, and the final concept was approved by both team leadership and faculty as a manufacturable, competition-ready solution.
+            </p>
+
+
+            <header>
+            <h3>We are looking forward to next steps which include:</h3>
+          </header>
+          <p>
+            • Fabricating the pedal in steel to fully validate the performance under real loading.<br />
+            • Conducting physical testing with strain gauges or load rigs to confirm the FEA predictions.<br />
+            • Exploring alternative materials or heat treatments to reduce weight further while maintaining safety.<br />
+            • Integrating the pedal into the full braking system for vehicle-level testing and driver feedback.<br />
+            • Refining manufacturability to ensure the part can be reliably produced within the team’s resources.<br />
+          </p>
+          </p>
+
+          
+
+          
+        </section>
+
+        <!-- Optional Gallery / More Images -->
+        <!-- <section class="posts">
+          <article>
+            <header><h3>Rough Ergonomic Mockups</h3></header>
+            <a href="#" class="image fit"><img src="images/steeringwheel_mockups.jpg" alt="Ergo Mockups" /></a>
+            <p>Foam/ply templates to validate hand positions and thumb rest locations.</p>
+          </article>
+          <article>
+            <header><h3>Hub Interface Detail</h3></header>
+            <a href="#" class="image fit"><img src="images/steeringwheel_hub.jpg" alt="Hub Interface" /></a>
+            <p>Fillets and local thickening reduce stress concentrations at the spoke–hub junction.</p>
+          </article>
+        </section> -->
+
+        <ul class="actions special">
+          <li><a href="projects.html" class="button">← Back to Projects</a></li>
+        </ul>
+
+      </div><!-- /#main -->
+
+      <!-- Footer -->
+      <footer id="footer">
+        <!-- Optional contact form; keep or remove -->
+        <!-- <section>
+          <form method="post" action="#">
+            <div class="fields">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="3"></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li><input type="submit" value="Send Message" /></li>
+            </ul>
+          </form>
+        </section> -->
+
+        <section class="split contact">
+          <section>
+            <h3>Email</h3>
+            <p><a>22ctny@queensu.ca</a></p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li><a href="https://www.linkedin.com/in/mitchell-chan-896796306/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+              <!-- <li><a href="https://github.com/ryouol" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
+            </ul>
+          </section>
+        </section>
+      </footer>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul><li>&copy; Mitchell Chan</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+      </div>
+
+    </div><!-- /#wrapper -->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
